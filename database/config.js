@@ -4,7 +4,7 @@ const dbConnection = async()=>{
 
     try {
 
-        await mongoose.connect('mongodb://localhost/acortador',{
+        await mongoose.connect('mongodb+srv://ledezma:<password>@cluster0.hqvlb.mongodb.net/acortador',{
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
