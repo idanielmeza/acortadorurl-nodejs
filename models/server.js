@@ -2,12 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const {dbConnection} = require('../database/config');
 const rutas = require('../routes/acordador');
+require('dotenv').config()
 
 class Server{
 
     constructor(){
         this.app = express();
-        this.port = 3000;
+        this.port = process.env.PORT || 80;
         //Conectar DB
         this.conectarDB();
 
