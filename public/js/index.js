@@ -15,7 +15,7 @@ const acortarURL = async()=>{
         return;
     }
     
-    const api = 'http://localhost:3000/api';
+    const api = 'http://ledezmadev/api';
     const settings = {
         method: 'POST',
         headers: {
@@ -50,7 +50,7 @@ const acortarURL = async()=>{
 
 const imprimirData = ({url,id})=>{
 
-    idUrl = `http://localhost:3000/${id}`
+    idUrl = `http://ledezmadev/${id}`
 
     const divResultado = document.querySelector('#resultado');
 
